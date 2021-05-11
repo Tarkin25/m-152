@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Video & Audio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/index.css">
   </head>
   <body>
 
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-5">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 		<a class="navbar-brand" href="/">M-152</a>
 		<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
 			aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavId">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="/video">Video & Audio</a>
 				</li>
 				<li class="nav-item">
@@ -33,8 +33,37 @@
 		</div>
 	</nav>
 
-    <div class="flex-container">
-        <img id="profile-pic" src="profile-pic.jpeg" height="250" width="250" alt="Severin Weigold" class="rounded-circle">
+    <div class="flex-container mt-4">
+        <section>
+            <div>
+                <video class="mb-2" width="480" height="270" controls>
+                    <source src="assets/earth.mp4" type="video/mp4">
+                    <source src="assets/earth.mov" type="video/mov">
+                </video>
+                <p>
+                    Supported formats
+                    <ul>
+                        <li>MP4</li>
+                        <li>MOV</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <audio class="mb-2" controls>
+                    <source src="assets/music.mp3" type="audio/mp3">
+                    <source src="assets/music.ogg" type="audio/ogg">
+                    <source src="assets/music.wav" type="audio/wav">
+                </audio>
+                <p>
+                    Supported formats
+                    <ul>
+                        <li>MP3</li>
+                        <li>OGG</li>
+                        <li>WAV</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
     </div>
       
     <!-- Optional JavaScript -->

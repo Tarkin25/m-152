@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-container > :not(:first-child) {
+    margin-top: 8px;
+}
+
+.flex-container > :not(:last-child) {
+    margin-bottom: 8px;
+}
+
+#profile-pic {
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
