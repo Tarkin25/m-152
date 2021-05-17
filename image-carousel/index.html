@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home</title>
+        <title>Image Carousel</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -34,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/"
                             >Home <span class="sr-only">(current)</span></a
                         >
@@ -42,7 +42,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/video">Video & Audio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="/image-carousel" class="nav-link"
                             >Image Carousel</a
                         >
@@ -56,16 +56,33 @@
             </div>
         </nav>
 
-        <div class="flex-container">
-            <img
-                src="profile-pic.jpeg"
-                height="250"
-                width="250"
-                alt="Severin Weigold"
-                class="rounded-circle shadow"
-            />
-            <p>Severin Weigold</p>
-        </div>
+        <main class="d-flex flex-column align-items-center">
+            <h2 class="display-2 mb-4">Image Carousel</h2>
+            <div class="carousel">
+                <div class="image-container shadow">
+                    <img
+                        src="https://i.pinimg.com/originals/a4/47/30/a44730c584b5c70d38fa61c87db3eca3.jpg"
+                        alt="Tree"
+                        class="show"
+                    /><img
+                        src="https://image.winudf.com/v2/image/Y29tLm5hdHVyZXdhbGxwYXBlci5rZHhpbWFuX3NjcmVlbl80XzE1MjQzOTg0OTJfMDkx/screen-4.jpg?fakeurl=1&type=.jpg"
+                        alt="River"
+                    />
+                    <img
+                        src="https://wallpapercave.com/wp/kjh8eTP.jpg"
+                        alt="Spring"
+                    />
+                    <img
+                        src="http://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg"
+                        alt="Mountain"
+                    />
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-small prev">Prev</button>
+                    <button class="btn btn-small next">Next</button>
+                </div>
+            </div>
+        </main>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -84,5 +101,6 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+        <script src="index.js"></script>
     </body>
 </html>
