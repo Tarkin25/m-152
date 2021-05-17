@@ -1,0 +1,44 @@
+body {
+    background-image: url("assets/background.jpg");
+    backdrop-filter: blur(1px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: flex;
+    margin: -8px;
+    align-items: stretch;
+}
+
+.grid-container .grid-item {
+    padding: 8px;
+}
+
+.grid-container .grid-item.grow {
+    flex-grow: 1;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-vertical > :not(:first-child) {
+    margin-top: 8px;
+}
+
+.flex-vertical > :not(:last-child) {
+    margin-bottom: 8px;
+}
+
+#video video {
+    max-height: 300px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
