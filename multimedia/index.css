@@ -9,6 +9,7 @@ body {
     display: flex;
     margin: -8px;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .grid-container .grid-item {
@@ -17,6 +18,18 @@ body {
 
 .grid-container .grid-item.grow {
     flex-grow: 1;
+}
+
+.grid-item.col-6 {
+    width: 50%;
+}
+
+.grid-item.col-4 {
+    width: 33.333333%;
+}
+
+.grid-item.col-3 {
+    width: 25%;
 }
 
 .flex-vertical {
@@ -33,7 +46,7 @@ body {
     margin-bottom: 8px;
 }
 
-#video video {
+video, img {
     max-height: 300px;
 }
 

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multimedia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">M-152</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/multimedia">Multimedia</a>
+          </li>
+          <li class="nav-item">
+            <a href="/image-carousel" class="nav-link">Image Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/installation.html" target="_blank"
+              >Installation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="flex-vertical p-4">
+      <section class="flex-vertical">
+        <h2 class="display-2 text-center">Video</h2>
+        <video controls>
+          <source src="assets/video.mp4" type="video/mp4" />
+          <source src="assets/video.webm" type="video/webm" />
+        </video>
+        <div class="grid-container">
+          <div class="grid-item col-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">MP4</h4>
+                <p class="card-text">
+                  MP4, short for "MPEG-4 Part 14" is a very popular video format
+                  inspired by the QuickTime (.mov) format. It was developed by
+                  Apple.
+                  <br />
+                  MP4 is the video format recommended by YouTube.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported by the majority of media players</li>
+                  <li>Easy to integrate video subtitles</li>
+                  <li>High quality</li>
+                  <li>Supports 3D objects</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Complicated editing process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">WebM</h4>
+                <p class="card-text">
+                  The WebM format was created with the distinct goal of being
+                  used on websites. Used together with the HTML5 specification,
+                  it creates videos of very small file sizes.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Open-source and roaylty-free format</li>
+                  <li>Widely used for HTML5 and Chromecast</li>
+                  <li>Greatly simplifies streaming</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Not supported on a wide variety of mobile devices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex-vertical">
+        <h2 class="display-2">Audio</h2>
+        <audio controls>
+          <source src="assets/audio.mp3" type="audio/mpeg" />
+          <source src="assets/audio.ogg" type="audio/ogg" />
+          <source src="assets/audio.wav" type="audio/wav" />
+        </audio>
+        <div class="grid-container">
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">MP3</h4>
+                <p class="card-text">
+                  The MP3 format is a popular audio file format which uses lossy
+                  compression.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Small file sizes</li>
+                  <li>Good for storing audio on mobile devices</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Low sound quality</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">WAV</h4>
+                <p class="card-text">
+                  WAV is the standard format in which all CDs are encoded. It
+                  does not use any compression.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Great sound quality</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Huge file sizes</li>
+                  <li>
+                    Poor metadata support (e.g. album artwork, artist, song
+                    title)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Ogg</h4>
+                <p class="card-text">
+                  OGG, short for "Ogg Vorbis", is a lossy, open-source
+                  alternative to MP3. This format is used in Spotify streaming.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Open-source</li>
+                  <li>Small file sizes</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Low audio quality</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex-vertical">
+        <h2 class="display-2">Images</h2>
+        <img src="assets/image.jpeg" alt="Image" />
+        <div class="grid-container">
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">JPEG / JPG</h4>
+                <p class="card-text">
+                  JPEG, short for "Joint Photographic Expert Group" is a
+                  grid-based image format using lossy compresison. It is one of
+                  the most popular image formats and supported on almost any
+                  browser / OS.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>Small file sizes</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Low image quality</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">PNG</h4>
+                <p class="card-text">
+                  PNG, short for "Portable Network Graphic" is a grid-based
+                  image format using lossless compression. It supports
+                  transparent pixels.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>High image quality</li>
+                  <li>Transparency support</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Larger file sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">PNG</h4>
+                <p class="card-text">
+                  PNG, short for "Portable Network Graphic" is a grid-based
+                  image format using lossless compression. It supports
+                  transparent pixels.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>High image quality</li>
+                  <li>Transparency support</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Larger file sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">PNG</h4>
+                <p class="card-text">
+                  PNG, short for "Portable Network Graphic" is a grid-based
+                  image format using lossless compression. It supports
+                  transparent pixels.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>High image quality</li>
+                  <li>Transparency support</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Larger file sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">PNG</h4>
+                <p class="card-text">
+                  PNG, short for "Portable Network Graphic" is a grid-based
+                  image format using lossless compression. It supports
+                  transparent pixels.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>High image quality</li>
+                  <li>Transparency support</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Larger file sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">PNG</h4>
+                <p class="card-text">
+                  PNG, short for "Portable Network Graphic" is a grid-based
+                  image format using lossless compression. It supports
+                  transparent pixels.
+                </p>
+                <h6 class="card-subtitle">Pros</h6>
+                <ul class="card-text">
+                  <li>Supported almost anywhere</li>
+                  <li>High image quality</li>
+                  <li>Transparency support</li>
+                </ul>
+                <h6 class="card-subtitle">Cons</h6>
+                <ul class="card-text">
+                  <li>Larger file sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
