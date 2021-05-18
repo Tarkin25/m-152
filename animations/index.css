@@ -1,0 +1,61 @@
+.row {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+}
+
+.row > * {
+    padding: 8px;
+}
+
+.row > * > * {
+    border-radius: 8px;
+}
+
+.pulsate {
+    width: 100px;
+    height: 100px;
+    animation: pulsate 1s infinite alternate;
+    background-color: blueviolet;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+.change-color {
+    width: 100px;
+    height: 100px;
+    animation: change-color 7s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: red;
+    }
+    16.666% {
+        background-color: orange;
+    }
+    33.333% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: green;
+    }
+    66.666% {
+        background-color: #0000FF;
+    }
+    83.333% {
+        background-color: #3F00FF;
+    }
+    100% {
+        background-color: #7F00FF;
+    }
+}
