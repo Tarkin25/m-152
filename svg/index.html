@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Image Carousel</title>
+    <title>SVG Animations</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -40,15 +40,15 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/multimedia">Multimedia</a>
+            <a class="nav-link" href="/multimedia/">Multimedia</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="/image-carousel" class="nav-link">Image Carousel</a>
           </li>
           <li class="nav-item">
             <a href="/animations" class="nav-link">Animations</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="/svg" class="nav-link">SVG Animations</a>
           </li>
           <li class="nav-item">
@@ -60,29 +60,14 @@
       </div>
     </nav>
 
-    <main class="d-flex flex-column align-items-center">
-      <h2 class="display-2 mb-4">Image Carousel</h2>
-      <div class="carousel">
-        <div class="image-container shadow">
-          <img
-            src="https://i.pinimg.com/originals/a4/47/30/a44730c584b5c70d38fa61c87db3eca3.jpg"
-            alt="Tree"
-            class="show"
-          /><img
-            src="https://image.winudf.com/v2/image/Y29tLm5hdHVyZXdhbGxwYXBlci5rZHhpbWFuX3NjcmVlbl80XzE1MjQzOTg0OTJfMDkx/screen-4.jpg?fakeurl=1&type=.jpg"
-            alt="River"
-          />
-          <img src="https://wallpapercave.com/wp/kjh8eTP.jpg" alt="Spring" />
-          <img
-            src="http://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg"
-            alt="Mountain"
-          />
-        </div>
-        <div class="buttons">
-          <button class="btn btn-small prev">Prev</button>
-          <button class="btn btn-small next">Next</button>
-        </div>
-      </div>
+    <main class="body">
+      <svg width="800" height="600" viewBox="0 0 800 600">
+        <circle id="sun" cx="400" cy="300" fill="yellow" r="20"></circle>
+        
+        <circle id="mercury" class="planet" cx="350" cy="300" r="10"></circle>
+        <circle id="venus" class="planet" cx="300" cy="300" r="11"></circle>
+        <circle id="earth" class="planet" cx="240" cy="300" r="13"></circle>
+      </svg>
     </main>
 
     <!-- Optional JavaScript -->
@@ -102,6 +87,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
   </body>
 </html>
